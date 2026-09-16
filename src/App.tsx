@@ -612,6 +612,11 @@ export default function App() {
             value={answers.chocolate}
             onChange={handleFinalChocolateSelect}
           />
+          {answers.chocolate && (
+            <p className="eyebrow colour-feedback">
+              answers sent for correction
+            </p>
+          )}
         </QuestionSection>
 
         {/* PHOTO STRING — index 14 */}
