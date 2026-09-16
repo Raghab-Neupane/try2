@@ -258,10 +258,12 @@ function ChoicePills({
 /*  Backend API Integration                                            */
 /* ------------------------------------------------------------------ */
 
+const env = import.meta.env as Record<string, string | undefined>;
 const BASE_API_URL = (
-  import.meta.env.VITE_BASE_API_URL ||
-  import.meta.env.VITE_BASE_API ||
-  import.meta.env.VITE_API_URL ||
+  env.BASE_API_URL ||
+  env.VITE_BASE_API_URL ||
+  env.VITE_BASE_API ||
+  env.VITE_API_URL ||
   ""
 ).replace(/\/$/, "");
 
