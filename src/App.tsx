@@ -130,7 +130,7 @@ function FloatingSymbols() {
       const symbol = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
       const isKaomoji = symbol.length > 2;
       const size = isKaomoji ? 13 + Math.random() * 5 : 16 + Math.random() * 20;
-      const opacity = isKaomoji ? 0.45 + Math.random() * 0.35 : 0.35 + Math.random() * 0.45;
+      const opacity = isKaomoji ? 0.22 + Math.random() * 0.2 : 0.18 + Math.random() * 0.22;
       const duration = 12 + Math.random() * 12;
       const delay = -Math.random() * duration;
       const driftX = (Math.random() > 0.5 ? 1 : -1) * (14 + Math.random() * 18);
